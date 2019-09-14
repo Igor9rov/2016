@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6f937377-9775-4ed4-a068-5aa42b57bce7}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>downloadnlkt.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="downloadnlkt.py" />
+    <Compile Include="exampletextclassification.py" />
+    <Compile Include="Final\compare.py" />
+    <Compile Include="Final\WithParsing\example.py" />
+    <Compile Include="Final\WithParsing\examplethread.py" />
+    <Compile Include="Final\WithParsing\example_lxml.py" />
+    <Compile Include="Final\WithParsing\Parsing.py" />
+    <Compile Include="Final\WithParsing\proxytut.py" />
+    <Compile Include="howmuch.py" />
+    <Compile Include="jsonexample.py" />
+    <Compile Include="linearsvc.py" />
+    <Compile Include="nltkexample.py" />
+    <Compile Include="parsing.py" />
+    <Compile Include="pymorph.py" />
+    <Compile Include="spmatrix.py" />
+    <Compile Include="tfidf.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Final" />
+    <Folder Include="Final\WithParsing" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
